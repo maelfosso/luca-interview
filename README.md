@@ -2,7 +2,7 @@
 
 > Luca interview consists of testing Angular capacity
 
-![screenshot](./luca-interview.png)
+![screenshot](./luca-interview.PNG)
 
 As features:
 
