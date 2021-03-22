@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -15,7 +16,7 @@ export class SignInComponent implements OnInit {
 
   error: string = undefined;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -24,7 +25,9 @@ export class SignInComponent implements OnInit {
     const { username, password } = this.signInForm.value;
 
     if (username == 'luca' && password == 'test') {
+      localStorage.setItem("connected", 'true');
 
+      this.router.navigate(['/', 'publications']);
     } else {
       this.error = "Wrong username/password";
     }

@@ -12,10 +12,9 @@ h1,h2 {
 
 body {
   background-color: #F1F2F8;
-  padding-top: 2em;
 }
 
-app-root {
+main {
   width: 50%;
   margin: auto;
   display: block;
@@ -23,6 +22,10 @@ app-root {
 
 nav {
   margin-bottom: 3em;
+}
+
+header nav {
+  padding: 8px 16px;
 }
 
 .same-line {
@@ -112,6 +115,7 @@ a {
   letter-spacing: 0.02em;
 
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .button.cancel {

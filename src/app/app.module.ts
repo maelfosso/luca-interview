@@ -12,6 +12,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AddPublicationComponent } from './add-publication/add-publication.component';
 import { PublicationItemComponent } from './publication-item/publication-item.component';
 
+import { AuthGuard } from './_guard/auth.guard';
+import { AuthModule } from './auth/auth.module';
+import { LayoutModule } from './layout/layout.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +33,13 @@ import { PublicationItemComponent } from './publication-item/publication-item.co
       InMemoryDataService, { dataEncapsulation: false }
     ),
 
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    LayoutModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

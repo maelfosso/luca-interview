@@ -4,9 +4,9 @@ import { PublicationsComponent } from './publications/publications.component';
 import { AddPublicationComponent } from './add-publication/add-publication.component';
 
 const routes: Routes = [
-  { path: 'publications', component: PublicationsComponent },
-  { path: 'add', component: AddPublicationComponent },
-  { path: '', redirectTo: 'publications', pathMatch: 'full' },
+  // { path: 'publications', component: PublicationsComponent },
+  // { path: 'add', component: AddPublicationComponent },
+  // { path: '', redirectTo: 'publications', pathMatch: 'full' },
 ]
 
 @NgModule({
