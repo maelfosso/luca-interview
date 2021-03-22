@@ -28,7 +28,7 @@ You must have **Node.js** installed
 ### Setup
 
 - Install **Angular cli**, `npm install -g @angular/cli`
-- Clone the repository `git clone **https://github.com/maelfosso/luca-interview.git**`
+- Clone the repository `git clone https://github.com/maelfosso/luca-interview.git`
 
 ### Install
 
