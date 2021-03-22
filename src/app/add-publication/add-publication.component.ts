@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { Location } from '@angular/common';
+import { Publication } from '../_models/publication';
+import { PublicationService } from '../_services/publication.service';
 
 @Component({
   selector: 'app-add-publication',
@@ -7,9 +11,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddPublicationComponent implements OnInit {
 
-  constructor() { }
+  publicationForm = new FormGroup({
+    title: new FormControl(''),
+    publication: new FormControl(''),
+  });
+
+  constructor(
+    private publicationService: PublicationService,
+    private location: Location,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  onCancel() {
+    this.location.back();
+  }
+
+  onSubmit() {
+    console.log(this.publicationForm.value);
+
+    this.publicationService.addPublication(this.publicationForm.value as Publication)
+    .subscribe(publication => {
+      this.location.back();
+    });
   }
 
 }

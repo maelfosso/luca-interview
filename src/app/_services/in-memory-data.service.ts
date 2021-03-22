@@ -11,7 +11,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
     const publications = [];
-    for (let i=0; i < 10; i++) {
+    for (let i=0; i < 1; i++) {
       publications.push({
         id: i + 10,
         title: faker.lorem.sentence(),
