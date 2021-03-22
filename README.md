@@ -1,27 +1,71 @@
-# LucaInterview
+# Luca Interview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+> Luca interview consists of testing Angular capacity
 
-## Development server
+![screenshot](./luca-interview.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+As features:
 
-## Code scaffolding
+- List publications
+- Create publication
+- Sign In (**username**: luca, **password**: test)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built With
 
-## Build
+- Javascript
+- Angular 8+
+- Git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To get a local copy up and running follow these simple example steps.
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+You must have **Node.js** installed
 
-## Further help
+### Setup
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Install **Angular cli**, `npm install -g @angular/cli`
+- Clone the repository `git clone **https://github.com/maelfosso/luca-interview.git**`
+
+### Install
+
+- `cd luca-interview`
+- `npm install`
+- `ng serve`
+
+### Usage
+
+- Start by **Sign In**, using **username**: luca, **password**: test
+- Create a publication
+- Get the publications already created
+
+## Authors
+
+👤 **Mael FOSSO**
+
+- GitHub: [@maelfosso](https://github.com/maelfosso)
+- Twitter: [@maelfosso](https://twitter.com/maelfosso)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mael-fosso-650b6346/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
