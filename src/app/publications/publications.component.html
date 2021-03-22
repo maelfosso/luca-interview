@@ -1,1 +1,14 @@
-<p>publications works!</p>
+<section>
+  <nav>
+    <h2>Publications</h2>
+    <div>
+      <button>Create Publication</button>
+    </div>
+  </nav>
+  <article>
+    <div *ngFor="let pub of publications">
+      <div>{{ pub.title }}</div>
+      <div>{{ pub.publication }}</div>
+    </div>
+  </article>
+</section>
