@@ -73,6 +73,10 @@ nav {
   cursor: pointer;
 }
 
+.publication.open {
+  white-space: normal;
+}
+
 a {
   font-family: Poppins;
   font-style: normal;

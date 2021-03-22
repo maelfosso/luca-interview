@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AddPublicationComponent } from './add-publication/add-publication.component';
+import { PublicationItemComponent } from './publication-item/publication-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PublicationsComponent,
-    AddPublicationComponent
+    AddPublicationComponent,
+    PublicationItemComponent
   ],
   imports: [
     BrowserModule,
