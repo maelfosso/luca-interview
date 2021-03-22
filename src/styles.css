@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F1F2F8;
+}
+
+app-root {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+.same-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #333333;
+}
+
+.publication-item {
+  border-bottom: 1px solid #DBDBDB;
+  padding: 24px 16px 16px 8px;
+}
+
+.title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #4F4F4F;
+}
+
+.publication {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #828282;
+  opacity: 0.7;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 24px;
+
+  background: #3843D0;
+  border: 3px solid #212B80;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 0px #212B80;
+  border-radius: 10px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+}

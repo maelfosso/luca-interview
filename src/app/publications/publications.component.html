@@ -1,15 +1,14 @@
 <section>
-  <nav>
-    <h2>Publications</h2>
+  <nav class="same-line">
+    <h2 class="page-title">Publications</h2>
     <div>
-      <a routerLink="/add">Create Publication</a>
+      <a routerLink="/add" class="button">Create Publication</a>
     </div>
   </nav>
   <article>
-    <div *ngFor="let pub of publications">
-      <div>{{ pub.title }}</div>
-      <div>{{ pub.publication }}</div>
-      <hr>
+    <div class="publication-item" *ngFor="let pub of publications">
+      <div class="title">{{ pub.title }}</div>
+      <div class="publication">{{ pub.publication }}</div>
     </div>
   </article>
 </section>
