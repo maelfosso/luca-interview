@@ -8,11 +8,13 @@ import { InMemoryDataService } from './_services/in-memory-data.service';
 import { AppComponent } from './app.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AddPublicationComponent } from './add-publication/add-publication.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    AddPublicationComponent
   ],
   imports: [
     BrowserModule,
