@@ -1,0 +1,21 @@
+<section>
+    <nav class="same-line">
+      <h2 class="page-title">Sign In</h2>
+    </nav>
+    <div>
+      <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" required formControlName="username"/>
+        </div>
+        <div>
+          <label for="password">Publication</label>
+          <input type="password" id="password" required formControlName="password" />
+        </div>
+        <div>
+          <button type="submit" class="button" [disabled]="!signInForm.valid">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
