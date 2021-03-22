@@ -14,9 +14,11 @@ export class LayoutComponent implements OnInit {
   }
 
   onLogout() {
+    console.log('onLogout()')
+
     localStorage.removeItem("connected");
 
-    this.router.navigate(['/']);
+    this.router.navigate(['/auth/sign-in']);
   }
 
 }

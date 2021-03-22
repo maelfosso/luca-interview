@@ -15,6 +15,7 @@ import { PublicationItemComponent } from './publication-item/publication-item.co
 import { AuthGuard } from './_guard/auth.guard';
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LayoutModule } from './layout/layout.module';
     AppComponent,
     PublicationsComponent,
     AddPublicationComponent,
-    PublicationItemComponent
+    PublicationItemComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

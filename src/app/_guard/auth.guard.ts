@@ -12,15 +12,11 @@ export class AuthGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-    console.log('AuthGuard ... Check');
-
     let connected = JSON.parse(localStorage.getItem("connected"));
 
     if (connected) {
-      console.log('connected');
       return true;
     } else {
-      console.log('not connected');
     	this.router.navigate(['/auth/sign-in']);
 
     	return false;
