@@ -10,13 +10,14 @@ import { Publication } from '../_models/publication';
 export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
-    const publications = Array(10).map((v, i) => {
-      return {
+    const publications = [];
+    for (let i=0; i < 10; i++) {
+      publications.push({
         id: i + 10,
         title: faker.lorem.sentence(),
         publication: faker.lorem.paragraphs()
-      }
-    });
+      })
+    }
     
     return { publications };
   }

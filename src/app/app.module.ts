@@ -7,6 +7,7 @@ import { InMemoryDataService } from './_services/in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { PublicationsComponent } from './publications/publications.component';
 
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

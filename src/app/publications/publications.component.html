@@ -6,6 +6,7 @@
     </div>
   </nav>
   <article>
+    {{ publications | json }}
     <div *ngFor="let pub of publications">
       <div>{{ pub.title }}</div>
       <div>{{ pub.publication }}</div>
