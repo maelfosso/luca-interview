@@ -12,12 +12,17 @@ h1,h2 {
 
 body {
   background-color: #F1F2F8;
+  padding-top: 2em;
 }
 
 app-root {
   width: 50%;
   margin: auto;
   display: block;
+}
+
+nav {
+  margin-bottom: 3em;
 }
 
 .same-line {
@@ -103,4 +108,46 @@ a {
   letter-spacing: 0.02em;
 
   color: #FFFFFF;
+}
+
+.button.cancel {
+  color: #3843D0;
+  background-color: #FFFFFF;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #565656;
+
+  margin-bottom: 8px;
+}
+
+form input, form textarea {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 48px 15px 16px;
+
+  background: #FFFFFF;
+  border: 2px solid rgba(38, 38, 38, 0.25);
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  margin-bottom: 32px;
+}
+
+form div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }

@@ -2,7 +2,7 @@
   <nav class="same-line">
     <h2 class="page-title">Create publication</h2>
     <div>
-      <button type="button" class="button" (click)="onCancel()">Cancel</button>
+      <button type="button" class="button cancel" (click)="onCancel()">Cancel</button>
     </div>
   </nav>
   <div>
@@ -13,7 +13,7 @@
       </div>
       <div>
         <label for="publication">Publication</label>
-        <textarea id="publication" required formControlName="publication">
+        <textarea rows="20" id="publication" required formControlName="publication">
 
         </textarea>
       </div>
