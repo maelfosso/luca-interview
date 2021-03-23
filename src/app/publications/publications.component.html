@@ -1,4 +1,4 @@
-<section>
+<section class="publications">
   <nav class="same-line">
     <h2 class="page-title">Publications</h2>
     <div>
@@ -6,6 +6,11 @@
     </div>
   </nav>
   <article>
+    <nav>
+      <div class="active">POPULARES</div>
+      <div>NUEVOS</div>
+      <div>SEGUIDOS</div>
+    </nav>
     <app-publication-item *ngFor="let pub of publications" [publication]="pub"></app-publication-item>
   </article>
 </section>
