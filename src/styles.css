@@ -255,6 +255,12 @@ a {
   background-color: #FFFFFF;
 }
 
+.button:disabled {
+  background-color: gray;
+  border-color: gray;
+  box-shadow: unset;
+}
+
 form div {
   display: flex;
   flex-direction: column;
