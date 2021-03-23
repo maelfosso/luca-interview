@@ -20,13 +20,8 @@ export class InMemoryDataService implements InMemoryDbService {
     }
     
     return { publications };
-  }
-
-  // Overrides the genId method to ensure that a hero always has an id.
-  // If the publications array is empty,
-  // the method below returns the initial number (11).
-  // if the publications array is not empty, the method below returns the highest
-  // hero id + 1.
+  } 
+  
   genId(publications: Publication[]): number {
     return publications.length > 0 ? Math.max(...publications.map(hero => hero.id)) + 1 : 11;
   }

@@ -48,6 +48,93 @@ header nav {
 .publication-item {
   border-bottom: 1px solid #DBDBDB;
   padding: 24px 16px 16px 8px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.publication-item div.body {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+div.body div.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.body div.top div.content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+div.body div.top div.comments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.comments div.message-circle {
+  padding: 3px;
+}
+
+div.comments div.text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #9A9CB5;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 4px;
+}
+
+div.publication-item div.body div.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16px;
+}
+
+div.publication-item div.body div.caption {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  
+  color: #828282;
+}
+
+span.author {
+  font-weight: bold;
+  color: #3843D0;
+}
+
+div.bottom div.thumbs, div.bottom div.share-star {
+  display: flex;
+  flex-direction: row;
+}
+
+div.star, div.thumbs div.up, div.thumbs div.down {
+  padding: 2px;
+}
+
+div.thumbs div.up {
+  margin-right: 18px;
+}
+
+div.share {
+  margin-right: 26px;
 }
 
 .title {
@@ -74,10 +161,25 @@ header nav {
   white-space: nowrap;
   text-overflow: ellipsis;
   cursor: pointer;
+
+  max-width: 600px;
+  margin-right: 1em;
 }
 
 .publication.open {
   white-space: normal;
+  max-width: 700px;
+  text-align: justify;
+}
+
+.avatar {
+  box-sizing: border-box;
+  background: #3843D0;
+  height: 56px;
+  border-radius: 50%;
+  width: 56px;
+  padding: 10.17px 6px 0px 6px;
+  margin-right: 32px;
 }
 
 a {

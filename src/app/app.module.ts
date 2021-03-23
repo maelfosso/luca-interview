@@ -16,6 +16,7 @@ import { AuthGuard } from './_guard/auth.guard';
 import { AuthModule } from './auth/auth.module';
 import { LayoutModule } from './layout/layout.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AvatarComponent } from './svg-icon/avatar/avatar.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     PublicationsComponent,
     AddPublicationComponent,
     PublicationItemComponent,
-    NavbarComponent
+    NavbarComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,
