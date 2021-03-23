@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Location } from '@angular/common';
 import { Publication } from '../_models/publication';
 import { PublicationService } from '../_services/publication.service';
@@ -12,8 +12,15 @@ import { PublicationService } from '../_services/publication.service';
 export class AddPublicationComponent implements OnInit {
 
   publicationForm = new FormGroup({
-    title: new FormControl(''),
-    publication: new FormControl(''),
+    title: new FormControl('', [
+      Validators.required,
+      Validators.minLength(4),
+      Validators.maxLength(50)
+    ]),
+    publication: new FormControl('', [
+      Validators.required,
+      Validators.minLength(100),
+    ]),
   });
 
   constructor(
@@ -23,6 +30,10 @@ export class AddPublicationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  get title() { return this.publicationForm.get('title'); }
+
+  get publication() { return this.publicationForm.get('publication'); }
 
   onCancel() {
     this.location.back();

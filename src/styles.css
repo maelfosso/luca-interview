@@ -278,6 +278,10 @@ form label {
   margin-bottom: 8px;
 }
 
+form > div {
+  margin-bottom: 32px;
+}
+
 form input, form textarea {
   display: flex;
   flex-direction: row;
@@ -288,12 +292,14 @@ form input, form textarea {
   border: 2px solid rgba(38, 38, 38, 0.25);
   box-sizing: border-box;
   border-radius: 12px;
-
-  margin-bottom: 32px;
 }
 
 form div:last-child {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+div.alert.alert-danger {
+  color: red;
 }
